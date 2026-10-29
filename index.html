@@ -34,7 +34,12 @@ nav.chapters{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;scrollbar-
 nav.chapters::-webkit-scrollbar{display:none}
 nav.chapters a{flex-shrink:0;color:var(--muted);text-decoration:none;font-size:12.5px;padding:6px 11px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 nav.chapters a:hover,nav.chapters a:focus-visible{color:var(--ink);border-color:var(--gold);outline:none}
-.intro{padding-block:28px 8px}
+.intro{padding-block:28px 8px;display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:28px;align-items:center}
+.intro-txt{min-width:0}
+.reel{margin:0;justify-self:center;width:100%;max-width:230px}
+.reel video{display:block;width:100%;height:auto;aspect-ratio:9/16;border-radius:18px;background:var(--ground-2);border:1px solid var(--line);box-shadow:0 12px 36px rgba(0,0,0,.5)}
+.reel figcaption{justify-content:center;text-transform:none;letter-spacing:.02em}
+@media (max-width:640px){.intro{grid-template-columns:1fr;gap:22px}.reel{max-width:260px}}
 .intro h1{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:clamp(24px,5vw,34px);line-height:1.15;margin:0 0 8px;text-wrap:balance}
 .intro h1 em{font-style:normal;color:var(--gold)}
 .intro p{color:var(--muted);margin:0;max-width:62ch}
@@ -82,12 +87,18 @@ footer h2{font-family:var(--display);font-stretch:112%;font-size:20px;margin:0}
 
 <main class="wrap">
   <section class="intro">
-    <h1>Catalogue fournisseur 2026 — <em>équiper les entreprises de Guinée</em></h1>
-    <p>Équipements, pièces, EPI, fournitures et mobilier pour les mines, l'énergie, la banque, la construction, les institutions et les ONG. SOGEP-SARLU agit aussi comme centrale d'achat : un seul interlocuteur pour tous vos besoins, livraison gratuite partout à Conakry.</p>
-    <div class="actions">
-      <a class="btn primary" href="#p01">Feuilleter le catalogue</a>
-      <a class="btn" href="SOGEP-SARLU_Catalogue_2026.pdf" download>Télécharger le PDF</a>
+    <div class="intro-txt">
+      <h1>Catalogue fournisseur 2026 — <em>équiper les entreprises de Guinée</em></h1>
+      <p>Équipements, pièces, EPI, fournitures et mobilier pour les mines, l'énergie, la banque, la construction, les institutions et les ONG. SOGEP-SARLU agit aussi comme centrale d'achat : un seul interlocuteur pour tous vos besoins, livraison gratuite partout à Conakry.</p>
+      <div class="actions">
+        <a class="btn primary" href="#p01">Feuilleter le catalogue</a>
+        <a class="btn" href="SOGEP-SARLU_Catalogue_2026.pdf" download>Télécharger le PDF</a>
+      </div>
     </div>
+    <figure class="reel">
+      <video src="media/sogep-reel.mp4" poster="media/sogep-reel-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Vidéo de présentation SOGEP-SARLU : tout ce qu'il faut pour votre entreprise, SOGEP s'en occupe."></video>
+      <figcaption><span>SOGEP s'en occupe · 20 s</span></figcaption>
+    </figure>
   </section>
 
   <section class="sheets" id="sheets" aria-label="Pages du catalogue"></section>
@@ -125,6 +136,8 @@ document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
   try{navigator.clipboard.writeText(el.textContent).then(done,()=>sel(el))}catch(e){sel(el)}
 }));
 function sel(el){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)}
+if(matchMedia("(prefers-reduced-motion: reduce)").matches){const v=document.querySelector(".reel video");if(v){v.removeAttribute("autoplay");v.pause()}}
+try{if(matchMedia('(prefers-reduced-motion: reduce)').matches){const v=document.querySelector('.reel video');v.removeAttribute('autoplay');v.pause()}}catch(e){}
 if(location.hash){const t=document.querySelector(location.hash);if(t)setTimeout(()=>t.scrollIntoView(),50)}
 </script>
 
