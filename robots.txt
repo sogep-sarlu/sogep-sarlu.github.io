@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sogep-sarlu.github.io/sitemap.xml
