@@ -86,10 +86,10 @@
   /* ---------- 3. Chiffres qui défilent (anime.js, déclenchés par Motion inView) ---------- */
   const fmt = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   function countUp(el) {
-    const end = +el.dataset.count, suf = el.dataset.suffix || '';
-    if (!A || reduce) { el.textContent = fmt(end) + suf; return; }
+    const end = +el.dataset.count, suf = el.dataset.suffix || '', pre = el.dataset.prefix || '';
+    if (!A || reduce) { el.textContent = pre + fmt(end) + suf; return; }
     const o = { v: end === 0 ? 25000 : 0 };
-    A({ targets: o, v: end, duration: end === 0 ? 1600 : 1400, easing: 'easeOutExpo', update: () => { el.textContent = fmt(o.v) + suf; } });
+    A({ targets: o, v: end, duration: end === 0 ? 1600 : 1400, easing: 'easeOutExpo', update: () => { el.textContent = pre + fmt(o.v) + suf; } });
   }
 
   /* ---------- 4. Apparitions au défilement (Motion) ---------- */
