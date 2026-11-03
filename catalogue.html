@@ -94,7 +94,7 @@ footer h2{font-family:var(--display);font-stretch:112%;font-size:20px;margin:0}
       <p>Équipements, pièces, EPI, fournitures et mobilier pour les mines, l'énergie, la banque, la construction, les institutions et les ONG. SOGEP-SARLU agit aussi comme centrale d'achat : un seul interlocuteur pour tous vos besoins, livraison gratuite partout à Conakry.</p>
       <div class="actions">
         <a class="btn primary" href="#p01">Feuilleter le catalogue</a>
-        <a class="btn" href="SOGEP-SARLU_Catalogue_2026.pdf?v=3" download>Télécharger le PDF</a>
+        <a class="btn" href="SOGEP-SARLU_Catalogue_2026.pdf?v=4" download>Télécharger le PDF</a>
       </div>
     </div>
     <figure class="reel">
@@ -112,6 +112,7 @@ footer h2{font-family:var(--display);font-stretch:112%;font-size:20px;margin:0}
     <div class="rows">
       <div class="row"><span class="k">Tél. / WhatsApp</span><a class="v" id="tel" href="https://wa.me/224626298419" style="color:inherit">+224 626 29 84 19</a><button class="copy" data-copy="tel">Copier</button></div>
       <div class="row"><span class="k">E-mail</span><a class="v" id="mail" href="mailto:sogepgnsarl@gmail.com" style="color:inherit">sogepgnsarl@gmail.com</a><button class="copy" data-copy="mail">Copier</button></div>
+      <div class="row"><span class="k">Facebook</span><a class="v" href="https://www.facebook.com/sogepsarlu" target="_blank" rel="noopener" style="color:inherit">facebook.com/sogepsarlu</a></div>
     </div>
     <p class="legal">RCCM GN.TCC.2026.B.05461 · NIF 222677627</p>
   </div>
@@ -124,7 +125,7 @@ titles.forEach((t,i)=>{
   const n=String(i+1).padStart(2,'0');
   const f=document.createElement('figure'); f.className='sheet'; f.id='p'+n;
   const img=document.createElement('img');
-  img.src='pages/p'+n+'.jpg?v=3'; img.alt='Page '+(i+1)+' du catalogue SOGEP-SARLU 2026 : '+t;
+  img.src='pages/p'+n+'.jpg?v=4'; img.alt='Page '+(i+1)+' du catalogue SOGEP-SARLU 2026 : '+t;
   img.width=1075; img.height=1521; if(i>2) img.loading='lazy'; img.decoding='async';
   const c=document.createElement('figcaption');
   c.innerHTML='<span></span><span></span>'; c.children[0].textContent=t; c.children[1].textContent=n+' / 15';

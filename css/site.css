@@ -264,6 +264,7 @@ header .btn{min-height:44px;padding:0 18px;font-size:14px;white-space:nowrap;fle
 .coord a:hover{color:var(--gold)}
 .copy{background:transparent;color:var(--on-navy-2);border:1px solid rgba(255,255,255,.3);border-radius:4px;min-height:38px;padding:0 12px;font:700 13px var(--f-body);cursor:pointer;flex-shrink:0}
 .copy:hover{color:#fff;border-color:#fff}
+a.copy{display:inline-flex;align-items:center;text-decoration:none}
 .form{background:var(--paper);color:var(--ink);padding:30px;display:flex;flex-direction:column;gap:16px;border-top:4px solid var(--gold);box-shadow:0 30px 60px rgba(0,0,0,.35)}
 .form h3{font-size:24px;font-weight:850}
 .form .small{font-size:14.5px;color:var(--ink-2)}
