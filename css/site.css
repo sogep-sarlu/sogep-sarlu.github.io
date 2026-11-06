@@ -357,3 +357,5 @@ nav.menu a.lang{color:var(--gold)}
 .wa-float.away{opacity:0;transform:scale(.6);pointer-events:none}
 @media (prefers-reduced-motion:reduce){.wa-float{transition:none}}
 .flip .back-acts{position:sticky;bottom:-18px;background:var(--navy);margin-inline:-22px;padding:12px 22px 14px;border-top:1px solid var(--line-d);box-shadow:0 -12px 18px rgba(14,26,48,.85)}
+.brand b{white-space:nowrap}
+@media (max-width:1320px) and (min-width:1121px){nav.menu{gap:15px} nav.menu a{font-size:14px} header .wrap{gap:18px}}

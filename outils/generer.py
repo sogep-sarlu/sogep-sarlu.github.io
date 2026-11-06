@@ -145,7 +145,7 @@ def head(lang, title, desc, canonical, alt_url, depth, img, extra_ld):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
-<link rel="stylesheet" href="{up}css/site.css?v=5">
+<link rel="stylesheet" href="{up}css/site.css?v=6">
 </head>'''
 
 
