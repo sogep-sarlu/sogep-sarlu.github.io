@@ -23,8 +23,8 @@ Ce dépôt est **public**. N'y écrire aucun prix d'achat, aucune marge, aucun n
 ## Circuit des cotations (obligatoire)
 
 1. Une demande de cotation arrive (e-mail, Facebook, site, appel d'offres).
-2. Claude n'invente jamais un prix. Il envoie la demande à la direction **par e-mail (Gmail)** : client, articles, quantités, délai souhaité, lieu de livraison, avec un tableau où la direction indique les prix et les délais.
-3. La direction répond à cet e-mail avec les prix.
+2. Claude n'invente jamais un prix. Il envoie la demande à la direction **par e-mail (Gmail) à sogepgnsarl@gmail.com**, objet « [COTATION] Client – date » : client, articles, quantités, délai souhaité, lieu de livraison, avec un tableau où la direction indique les prix et les délais.
+3. La direction répond à cet e-mail avec les prix. Claude vérifie la boîte plusieurs fois par jour et ne relance le client qu'avec ces prix.
 4. Claude établit la pro forma à partir de ces prix uniquement, puis l'envoie au client ou au prospect.
 5. La logistique et les documents administratifs sont demandés à la direction au cas par cas.
 
