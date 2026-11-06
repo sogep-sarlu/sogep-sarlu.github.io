@@ -7,6 +7,7 @@
   const A = window.anime || null;
   const K = window.Kokonut || null;
   const html = document.documentElement;
+  const EN = html.lang === 'en';
 
   /* ---------- 1. Écran d'accueil (anime.js) puis ouverture ---------- */
   const splash = $('.splash');
@@ -68,6 +69,16 @@
     setTimeout(() => board.start(), heroDelay + 900);
   }
 
+  /* menu sur téléphone et tablette */
+  const mbtn = $('.menu-btn');
+  if (mbtn && hdrEl()) {
+    const setOpen = o => { hdrEl().classList.toggle('open', o); mbtn.setAttribute('aria-expanded', String(o)); mbtn.setAttribute('aria-label', o ? (mbtn.dataset.close || 'Fermer le menu') : (mbtn.dataset.open || 'Ouvrir le menu')); };
+    mbtn.addEventListener('click', () => setOpen(mbtn.getAttribute('aria-expanded') !== 'true'));
+    $$('nav.menu a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+    addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
+  }
+  function hdrEl() { return $('header.top'); }
+
   /* ---------- 2. Barre de progression, en-tête, menu actif (Motion) ---------- */
   const bar = $('#progress'), hdr = $('header.top');
   if (M && M.scroll && bar && !reduce) {
@@ -99,9 +110,10 @@
     els.forEach(el => {
       // seuls les éléments encore sous la ligne de flottaison partent cachés
       if (el.getBoundingClientRect().top < innerHeight) { if (opts.done) opts.done(el); return; }
-      el.style.opacity = '0';
+      const kf = Object.assign({}, opts.kf || { y: [36, 0] });
+      delete kf.opacity; // le contenu reste lisible avant l'animation (robots, aperçus, défilement rapide)
       M.inView(el, () => {
-        M.animate(el, opts.kf || { opacity: [0, 1], y: [36, 0] }, { duration: 0.8, delay: (opts.stagger || 0) * (els.indexOf(el) % (opts.mod || 3)), ease: [0.2, 0.7, 0.2, 1] });
+        M.animate(el, kf, { duration: 0.8, delay: (opts.stagger || 0) * (els.indexOf(el) % (opts.mod || 3)), ease: [0.2, 0.7, 0.2, 1] });
         if (opts.done) opts.done(el);
       }, { amount: opts.amount || 0.25 });
     });
@@ -131,11 +143,11 @@
       if (!A || reduce) { $('#stepline').style.transform = 'none'; return; }
       A.timeline({ easing: 'easeOutCubic' })
         .add({ targets: '#stepline', [vertical() ? 'scaleY' : 'scaleX']: [0, 1], duration: 1400 })
-        .add({ targets: '.steps .dot', scale: [0, 1], rotate: ['-90deg', '0deg'], duration: 600, delay: A.stagger(220), easing: 'easeOutBack' }, 0)
-        .add({ targets: '.steps li > :not(.dot)', opacity: [0, 1], translateY: [14, 0], duration: 500, delay: A.stagger(70) }, 150);
+        .add({ targets: '.steps .dot', scale: [0.6, 1], rotate: ['-90deg', '0deg'], duration: 600, delay: A.stagger(220), easing: 'easeOutBack' }, 0)
+        .add({ targets: '.steps li > :not(.dot)', translateY: [14, 0], duration: 500, delay: A.stagger(70) }, 150);
     };
     if (M && M.inView && !reduce && A && stepsWrap.getBoundingClientRect().top > innerHeight) {
-      A.set('.steps .dot', { scale: 0 }); A.set('.steps li > :not(.dot)', { opacity: 0 });
+      A.set('.steps .dot', { scale: 0.6 });
       M.inView(stepsWrap, run, { amount: 0.35 });
     } else run();
   }
@@ -155,14 +167,23 @@
   }
   if (reduce) html.classList.add('reduce');
 
+  /* le bouton WhatsApp flottant attend que l'ouverture soit passée, pour ne pas couvrir ses boutons */
+  (function () {
+    const fl = document.querySelector('.wa-float'), top = document.querySelector('.hero, .ghero');
+    if (!fl || !top || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(([en]) => fl.classList.toggle('away', en.isIntersecting), { threshold: 0.35 }).observe(top);
+  })();
+
   /* ---------- 6. Contact ---------- */
   const nom = $('#f-nom'), ent = $('#f-ent'), gam = $('#f-gamme'), bes = $('#f-besoin'), wa = $('#wa-link');
   function upd() {
-    const l = ['Bonjour SOGEP-SARLU, je souhaite une cotation.'];
-    if (nom.value.trim()) l.push('Nom : ' + nom.value.trim());
-    if (ent.value.trim()) l.push('Entreprise : ' + ent.value.trim());
-    if (gam.value) l.push('Gamme : ' + gam.value);
-    if (bes.value.trim()) l.push('Besoin : ' + bes.value.trim());
+    const L = EN ? ['Hello SOGEP-SARLU, I would like a quote.', 'Name: ', 'Company: ', 'Range: ', 'Requirement: ']
+                 : ['Bonjour SOGEP-SARLU, je souhaite une cotation.', 'Nom : ', 'Entreprise : ', 'Gamme : ', 'Besoin : '];
+    const l = [L[0]];
+    if (nom.value.trim()) l.push(L[1] + nom.value.trim());
+    if (ent.value.trim()) l.push(L[2] + ent.value.trim());
+    if (gam.value) l.push(L[3] + gam.value);
+    if (bes.value.trim()) l.push(L[4] + bes.value.trim());
     wa.href = 'https://wa.me/224626298419?text=' + encodeURIComponent(l.join('\n'));
   }
   if (wa) { [nom, ent, gam, bes].forEach(e => e.addEventListener('input', upd)); upd(); $('#devis').addEventListener('submit', e => e.preventDefault()); }
@@ -170,7 +191,7 @@
   const toast = m => { const t = $('#toast'); t.textContent = m; t.hidden = false; clearTimeout(tt); tt = setTimeout(() => t.hidden = true, 2200); };
   $$('[data-copy]').forEach(b => b.addEventListener('click', () => {
     const el = document.getElementById(b.dataset.copy), txt = el.textContent.trim();
-    const sel = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('Texte sélectionné'); };
-    try { navigator.clipboard.writeText(txt).then(() => toast('Copié : ' + txt), sel); } catch (e) { sel(); }
+    const sel = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast(EN ? 'Text selected' : 'Texte sélectionné'); };
+    try { navigator.clipboard.writeText(txt).then(() => toast((EN ? 'Copied: ' : 'Copié : ') + txt), sel); } catch (e) { sel(); }
   }));
 })();

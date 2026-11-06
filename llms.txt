@@ -1,0 +1,28 @@
+# SOGEP-SARLU
+
+> SOGEP-SARLU (Solutions Globales d'Équipements et de Prestations SARLU) est un fournisseur guinéen basé à Conakry. L'entreprise fournit aux sociétés minières, énergétiques, banques, entreprises du BTP, institutions et ONG tout leur équipement : pièces de groupes électrogènes, pompage, pneus, EPI, outillage, électricité, plomberie, matériaux, fournitures et mobilier de bureau, équipement de bases vie. Livraison gratuite partout à Conakry, intérieur du pays sur devis. Prix sur facture pro-forma en francs guinéens, valable 30 jours. Elle agit aussi comme centrale d'achat pour les articles hors catalogue.
+
+- Téléphone et WhatsApp : +224 626 29 84 19
+- E-mail : sogepgnsarl@gmail.com
+- RCCM : GN.TCC.2026.B.05461 · NIF : 222677627 · Banque : Ecobank Guinée SA
+- Facebook : https://www.facebook.com/sogepsarlu
+
+## Pages principales
+
+- [Accueil](https://sogep-sarlu.github.io/): présentation, fiche fournisseur, gammes, conditions, engagements, contact
+- [Catalogue 2026](https://sogep-sarlu.github.io/catalogue.html): catalogue fournisseur en 15 pages (PDF téléchargeable)
+- [English version](https://sogep-sarlu.github.io/en/): company profile and product ranges in English
+
+## Gammes de produits
+
+- [Pièces moteurs et groupes électrogènes](https://sogep-sarlu.github.io/gammes/pieces-moteurs-groupes-electrogenes.html): Filtres PERKINS, turbocompresseurs, kits d'entretien et pièces toutes marques pour groupes électrogènes à Conakry.
+- [Pompage et hydraulique](https://sogep-sarlu.github.io/gammes/pompage-hydraulique.html): Motopompes diesel, tuyaux d'aspiration et de refoulement, crépines, raccords et flexibles hydrauliques à Conakry.
+- [Pneumatiques et véhicules](https://sogep-sarlu.github.io/gammes/pneumatiques-vehicules.html): Pneus 4×4 et utilitaires, batteries, lubrifiants, extincteurs et trousses de secours pour véhicules à Conakry.
+- [Protection individuelle (EPI)](https://sogep-sarlu.github.io/gammes/epi-protection-individuelle.html): EPI à Conakry : casques, gants, gants anti-serpent RAPICCA, chaussures de sécurité, gilets, lunettes et tenues de travail pour mines et chantiers.
+- [Outillage et quincaillerie](https://sogep-sarlu.github.io/gammes/outillage-quincaillerie.html): Caisses à outils, outillage à main, visserie, boulonnerie, cadenas et chaînes pour ateliers et sites à Conakry.
+- [Électricité](https://sogep-sarlu.github.io/gammes/electricite.html): Câbles électriques, projecteurs LED, rallonges et multiprises de chantier pour chantiers, bureaux et bases vie à Conakry.
+- [Plomberie et raccords](https://sogep-sarlu.github.io/gammes/plomberie-raccords.html): Tuyaux PVC et PEHD, raccords Ø 100 mm, vannes et robinets pour réseaux d'eau, sites et bâtiments à Conakry.
+- [Matériaux de construction](https://sogep-sarlu.github.io/gammes/materiaux-construction.html): Ciment, fer à béton, tôles de couverture, sable, gravier et moellons livrés sur chantier à Conakry.
+- [Fournitures de bureau et scolaires](https://sogep-sarlu.github.io/gammes/fournitures-bureau-scolaires.html): Papier A4, classeurs, cartouches et toners, cahiers, sacs d'écolier personnalisés et kits scolaires livrés en volume à Conakry.
+- [Aménagement et mobilier de bureau](https://sogep-sarlu.github.io/gammes/amenagement-mobilier-bureau.html): Stores jour et nuit sur mesure, rideaux, chaises, bureaux, armoires et climatiseurs fournis et posés à Conakry.
+- [Base vie et entretien](https://sogep-sarlu.github.io/gammes/base-vie-entretien.html): Matelas, literie, mobilier de base vie, produits d'entretien, machines à laver et sèche-linge pour camps miniers et bases vie en Guinée.

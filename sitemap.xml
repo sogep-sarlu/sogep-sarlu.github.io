@@ -1,5 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sogep-sarlu.github.io/</loc><lastmod>2026-11-01</lastmod><priority>1.0</priority></url>
-  <url><loc>https://sogep-sarlu.github.io/catalogue.html</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sogep-sarlu.github.io/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/catalogue.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/pieces-moteurs-groupes-electrogenes.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/pieces-moteurs-groupes-electrogenes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/generator-engine-parts.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/generator-engine-parts.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/pieces-moteurs-groupes-electrogenes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/generator-engine-parts.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/pompage-hydraulique.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/pompage-hydraulique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/pumping-hydraulics.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/pumping-hydraulics.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/pompage-hydraulique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/pumping-hydraulics.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/pneumatiques-vehicules.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/pneumatiques-vehicules.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/tyres-vehicle-equipment.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/tyres-vehicle-equipment.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/pneumatiques-vehicules.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/tyres-vehicle-equipment.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/epi-protection-individuelle.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/epi-protection-individuelle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/ppe-personal-protective-equipment.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/ppe-personal-protective-equipment.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/epi-protection-individuelle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/ppe-personal-protective-equipment.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/outillage-quincaillerie.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/outillage-quincaillerie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/tools-hardware.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/tools-hardware.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/outillage-quincaillerie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/tools-hardware.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/electricite.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/electricite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/electrical.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/electrical.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/electricite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/electrical.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/plomberie-raccords.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/plomberie-raccords.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/plumbing-fittings.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/plumbing-fittings.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/plomberie-raccords.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/plumbing-fittings.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/materiaux-construction.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/materiaux-construction.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/construction-materials.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/construction-materials.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/materiaux-construction.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/construction-materials.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/fournitures-bureau-scolaires.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/fournitures-bureau-scolaires.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/office-school-supplies.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/office-school-supplies.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/fournitures-bureau-scolaires.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/office-school-supplies.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/amenagement-mobilier-bureau.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/amenagement-mobilier-bureau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/office-fit-out-furniture.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/office-fit-out-furniture.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/amenagement-mobilier-bureau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/office-fit-out-furniture.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/gammes/base-vie-entretien.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/base-vie-entretien.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/camp-maintenance.html"/>
+  </url>
+  <url>
+    <loc>https://sogep-sarlu.github.io/en/ranges/camp-maintenance.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/gammes/base-vie-entretien.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/ranges/camp-maintenance.html"/>
+  </url>
 </urlset>

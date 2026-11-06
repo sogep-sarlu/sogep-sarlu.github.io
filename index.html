@@ -4,8 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>SOGEP-SARLU · Fournisseur d'équipements pour les entreprises de Guinée</title>
-<meta name="description" content="SOGEP-SARLU, fournisseur guinéen à Conakry : pièces moteurs et groupes électrogènes, pompage, pneus, EPI, outillage, électricité, plomberie, matériaux, fournitures et mobilier de bureau. Livraison gratuite partout à Conakry.">
+<meta name="description" content="Fournisseur à Conakry : pièces de groupes électrogènes, EPI, pneus, outillage, électricité, matériaux, fournitures et mobilier de bureau. Livraison gratuite à Conakry.">
 <link rel="canonical" href="https://sogep-sarlu.github.io/">
+<link rel="alternate" hreflang="fr" href="https://sogep-sarlu.github.io/">
+<link rel="alternate" hreflang="en" href="https://sogep-sarlu.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://sogep-sarlu.github.io/">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <meta name="theme-color" content="#0E1A30">
@@ -20,12 +23,12 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"SOGEP-SARLU","legalName":"Solutions Globales d'Équipements et de Prestations SARLU","url":"https://sogep-sarlu.github.io/","logo":"https://sogep-sarlu.github.io/icon.png","image":"https://sogep-sarlu.github.io/img/og.jpg","telephone":"+224626298419","email":"sogepgnsarl@gmail.com","areaServed":"Guinée","sameAs":["https://www.facebook.com/sogepsarlu"],"description":"Commerce général, achat-vente, importation et distribution de biens et d'équipements pour les entreprises de Guinée."}
+{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://sogep-sarlu.github.io/#entreprise","name":"SOGEP-SARLU","legalName":"Solutions Globales d'Équipements et de Prestations SARLU","url":"https://sogep-sarlu.github.io/","logo":"https://sogep-sarlu.github.io/icon.png","image":"https://sogep-sarlu.github.io/img/og.jpg","telephone":"+224626298419","email":"sogepgnsarl@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Conakry","addressCountry":"GN"},"areaServed":{"@type":"Country","name":"Guinée"},"currenciesAccepted":"GNF","knowsLanguage":["fr","en"],"sameAs":["https://www.facebook.com/sogepsarlu"],"identifier":[{"@type":"PropertyValue","propertyID":"RCCM","value":"GN.TCC.2026.B.05461"},{"@type":"PropertyValue","propertyID":"NIF","value":"222677627"}],"description":"Commerce général, achat-vente, importation et distribution de biens et d'équipements pour les entreprises de Guinée. Livraison gratuite partout à Conakry.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Gammes de produits","itemListElement":[{"@type":"OfferCatalog","name":"Pièces moteurs et groupes électrogènes","url":"https://sogep-sarlu.github.io/gammes/pieces-moteurs-groupes-electrogenes.html"},{"@type":"OfferCatalog","name":"Pompage et hydraulique","url":"https://sogep-sarlu.github.io/gammes/pompage-hydraulique.html"},{"@type":"OfferCatalog","name":"Pneumatiques et véhicules","url":"https://sogep-sarlu.github.io/gammes/pneumatiques-vehicules.html"},{"@type":"OfferCatalog","name":"Protection individuelle (EPI)","url":"https://sogep-sarlu.github.io/gammes/epi-protection-individuelle.html"},{"@type":"OfferCatalog","name":"Outillage et quincaillerie","url":"https://sogep-sarlu.github.io/gammes/outillage-quincaillerie.html"},{"@type":"OfferCatalog","name":"Électricité","url":"https://sogep-sarlu.github.io/gammes/electricite.html"},{"@type":"OfferCatalog","name":"Plomberie et raccords","url":"https://sogep-sarlu.github.io/gammes/plomberie-raccords.html"},{"@type":"OfferCatalog","name":"Matériaux de construction","url":"https://sogep-sarlu.github.io/gammes/materiaux-construction.html"},{"@type":"OfferCatalog","name":"Fournitures de bureau et scolaires","url":"https://sogep-sarlu.github.io/gammes/fournitures-bureau-scolaires.html"},{"@type":"OfferCatalog","name":"Aménagement et mobilier de bureau","url":"https://sogep-sarlu.github.io/gammes/amenagement-mobilier-bureau.html"},{"@type":"OfferCatalog","name":"Base vie et entretien","url":"https://sogep-sarlu.github.io/gammes/base-vie-entretien.html"}]}}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
-<link rel="stylesheet" href="css/site.css?v=3">
+<link rel="stylesheet" href="css/site.css?v=5">
 <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('sogep-splash'))document.documentElement.classList.add('no-splash')}catch(e){}if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('no-splash','reduce')</script>
 </head>
 <body>
@@ -35,18 +38,21 @@
 </div>
 <div class="progress" id="progress" aria-hidden="true"></div>
 
+<a class="skip" href="#top">Aller au contenu</a>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top"><img src="icon.png" alt="" width="42" height="42"><span><b>SOGEP-SARLU</b><small>Solutions globales d'équipements et de prestations</small></span></a>
-    <nav class="menu" aria-label="Menu principal">
+    <nav class="menu" id="menu" aria-label="Menu principal">
       <a href="#presentation">Présentation</a>
       <a href="#gammes">Nos gammes</a>
       <a href="#services">Comment commander</a>
       <a href="#engagements">Engagements</a>
       <a href="catalogue.html">Catalogue</a>
       <a href="#contact">Contact</a>
+      <a class="lang" href="en/" hreflang="en" lang="en">English</a>
     </nav>
-    <a class="btn btn-gold" href="#contact"><span class="slide"><span>Demander une cotation</span><span aria-hidden="true">Écrivez-nous →</span></span></a>
+    <a class="btn btn-gold hdr-cta" href="#contact"><span class="slide"><span>Demander une cotation</span><span aria-hidden="true">Écrivez-nous →</span></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu" data-open="Ouvrir le menu" data-close="Fermer le menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -64,7 +70,7 @@
       </div>
       <div class="board">
         <span class="lbl"><b>Livraison gratuite</b>Conakry →</span>
-        <span class="flap" id="flap" data-words="KALOUM|DIXINN|MATAM|RATOMA|MATOTO|SONFONIA" aria-label="Livraison gratuite dans toutes les communes de Conakry"></span>
+        <span class="flap" id="flap" data-words="KALOUM|DIXINN|MATAM|RATOMA|MATOTO|SONFONIA" aria-hidden="true"></span><span class="sr">Livraison gratuite dans toutes les communes de Conakry</span>
       </div>
     </div>
     <figure>
@@ -145,98 +151,99 @@
 <section class="sec stone" id="gammes">
   <div class="wrap">
     <div class="head"><span class="kicker">03 · Nos gammes</span><h2>Plus de 11 gammes de produits</h2><p>Retournez une carte pour voir les articles que nous fournissons régulièrement. Prix sur pro-forma, en francs guinéens.</p></div>
+<!-- GAMMES:DEBUT -->
 <div class="pole"><div class="pole-h"><h3>Énergie et mécanique</h3><small>Gammes 01 – 03</small></div><div class="cards"><article class="flip" id="g01">
   <div class="inner">
     <div class="face front"><figure><img src="img/g01.jpg" alt="Groupe électrogène installé dans un local technique" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">01</span><h4>Pièces moteurs et groupes électrogènes</h4><p class="desc">Filtres, turbocompresseurs et pièces d'entretien pour groupes électrogènes, fournis sur référence constructeur.</p>
+      <div class="body"><span class="num">01</span><h4><a class="glink" href="gammes/pieces-moteurs-groupes-electrogenes.html">Pièces moteurs et groupes électrogènes</a></h4><p class="desc">Filtres, turbocompresseurs et pièces d&#x27;entretien pour groupes électrogènes, fournis sur référence constructeur.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>01 · Pièces moteurs et groupes électrogènes</h4><table><tbody><tr><td>Filtre à air PERKINS<small>Réf. 1103A-33TG</small></td><td>Pièce</td></tr><tr><td>Filtre à huile PERKINS<small>Réf. 2654403</small></td><td>Pièce</td></tr><tr><td>Filtre à gasoil PERKINS<small>Réf. 4461492</small></td><td>Pièce</td></tr><tr><td>Turbocompresseur PERKINS<small>Pour groupe 45 kVA</small></td><td>Pièce</td></tr><tr><td>Kit d'entretien de groupe<small>Filtres, courroies et joints</small></td><td>Kit</td></tr><tr><td>Pièces toutes marques<small>Sur référence constructeur</small></td><td>Pièce</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>01 · Pièces moteurs et groupes électrogènes</h4><table><tbody><tr><td>Filtre à air PERKINS<small>Réf. 1103A-33TG</small></td><td>Pièce</td></tr><tr><td>Filtre à huile PERKINS<small>Réf. 2654403</small></td><td>Pièce</td></tr><tr><td>Filtre à gasoil PERKINS<small>Réf. 4461492</small></td><td>Pièce</td></tr><tr><td>Turbocompresseur PERKINS<small>Pour groupe électrogène 45 kVA</small></td><td>Pièce</td></tr><tr><td>Kit d&#x27;entretien de groupe<small>Filtres, courroies et joints selon modèle</small></td><td>Kit</td></tr><tr><td>Pièces toutes marques<small>Sur référence constructeur</small></td><td>Pièce</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/pieces-moteurs-groupes-electrogenes.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article><article class="flip" id="g02">
   <div class="inner">
     <div class="face front"><figure><img src="img/g02.jpg" alt="Pompes et tuyauteries industrielles" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">02</span><h4>Pompage et hydraulique</h4><p class="desc">Motopompes et accessoires de pompage pour vos sites, chantiers et bases vie.</p>
+      <div class="body"><span class="num">02</span><h4><a class="glink" href="gammes/pompage-hydraulique.html">Pompage et hydraulique</a></h4><p class="desc">Motopompes et accessoires de pompage pour vos sites, chantiers et bases vie.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>02 · Pompage et hydraulique</h4><table><tbody><tr><td>Motopompe diesel EGLE<small>Débit 80 m³/h</small></td><td>Pièce</td></tr><tr><td>Tuyau d'aspiration<small>Diamètre selon votre pompe</small></td><td>Mètre</td></tr><tr><td>Tuyau de refoulement<small>Ø 100 mm et autres</small></td><td>Mètre</td></tr><tr><td>Crépine d'aspiration<small>Diamètre selon votre pompe</small></td><td>Pièce</td></tr><tr><td>Raccords hydrauliques<small>Ø 100 mm et autres</small></td><td>Pièce</td></tr><tr><td>Flexibles hydrauliques<small>Sur référence</small></td><td>Pièce</td></tr><tr><td>Jauge en T pour cuves<small>Mesure du niveau de carburant</small></td><td>Pièce</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>02 · Pompage et hydraulique</h4><table><tbody><tr><td>Motopompe diesel EGLE<small>Débit 80 m³/h</small></td><td>Pièce</td></tr><tr><td>Tuyau d&#x27;aspiration<small>Diamètre selon votre pompe</small></td><td>Mètre</td></tr><tr><td>Tuyau de refoulement<small>Ø 100 mm et autres diamètres</small></td><td>Mètre</td></tr><tr><td>Crépine d&#x27;aspiration<small>Diamètre selon votre pompe</small></td><td>Pièce</td></tr><tr><td>Raccords hydrauliques<small>Ø 100 mm et autres diamètres</small></td><td>Pièce</td></tr><tr><td>Flexibles hydrauliques<small>Sur référence</small></td><td>Pièce</td></tr><tr><td>Jauge en T pour cuves<small>Mesure du niveau de carburant</small></td><td>Pièce</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/pompage-hydraulique.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article><article class="flip" id="g03">
   <div class="inner">
     <div class="face front"><figure><img src="img/g03.jpg" alt="Pneus empilés" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">03</span><h4>Pneumatiques et véhicules</h4><p class="desc">Pneus, batteries et équipements de sécurité pour véhicules légers, 4×4 et utilitaires, en deux gammes de prix.</p>
+      <div class="body"><span class="num">03</span><h4><a class="glink" href="gammes/pneumatiques-vehicules.html">Pneumatiques et véhicules</a></h4><p class="desc">Pneus, batteries et équipements de sécurité pour véhicules légers, 4×4 et utilitaires, en deux gammes de prix.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>03 · Pneumatiques et véhicules</h4><table><tbody><tr><td>Pneus 4×4 et utilitaires<small>Marques japonaises ou chinoises</small></td><td>Pièce</td></tr><tr><td>Pneus véhicules légers<small>Dimensions au choix</small></td><td>Pièce</td></tr><tr><td>Batteries<small>Selon véhicule</small></td><td>Pièce</td></tr><tr><td>Lubrifiants<small>Moteur, boîte, hydraulique</small></td><td>Litre</td></tr><tr><td>Triangle de signalisation<small>Vendu par paire</small></td><td>Paire</td></tr><tr><td>Extincteur de véhicule<small>Avec support</small></td><td>Pièce</td></tr><tr><td>Trousse de premiers secours<small>Format véhicule</small></td><td>Pièce</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>03 · Pneumatiques et véhicules</h4><table><tbody><tr><td>Pneus 4×4 et utilitaires<small>Marques japonaises ou chinoises</small></td><td>Pièce</td></tr><tr><td>Pneus véhicules légers<small>Dimensions au choix</small></td><td>Pièce</td></tr><tr><td>Batteries<small>Selon véhicule</small></td><td>Pièce</td></tr><tr><td>Lubrifiants<small>Moteur, boîte et hydraulique</small></td><td>Litre</td></tr><tr><td>Triangle de signalisation<small>Vendu par paire</small></td><td>Paire</td></tr><tr><td>Câbles de remorquage et de démarrage<small>Véhicules légers et 4×4</small></td><td>Pièce</td></tr><tr><td>Extincteur de véhicule<small>Avec support</small></td><td>Pièce</td></tr><tr><td>Trousse de premiers secours<small>Format véhicule</small></td><td>Pièce</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/pneumatiques-vehicules.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article></div></div>
 <div class="pole"><div class="pole-h"><h3>Sécurité et chantier</h3><small>Gammes 04 – 08</small></div><div class="cards five"><article class="flip" id="g04">
   <div class="inner">
     <div class="face front"><figure><img src="img/g04.jpg" alt="Casque de chantier jaune posé sur une palette" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">04</span><h4>Protection individuelle (EPI)</h4><p class="desc">Protection des équipes sur sites miniers, industriels et chantiers, conforme aux exigences HSE.</p>
+      <div class="body"><span class="num">04</span><h4><a class="glink" href="gammes/epi-protection-individuelle.html">Protection individuelle (EPI)</a></h4><p class="desc">Protection des équipes sur sites miniers, industriels et chantiers, conforme aux exigences HSE.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>04 · Protection individuelle (EPI)</h4><table><tbody><tr><td>Casque de chantier<small>Avec jugulaire</small></td><td>Pièce</td></tr><tr><td>Gants de manutention<small>Taille au choix</small></td><td>Paire</td></tr><tr><td>Gants anti-serpent RAPICCA<small>Usage sur site minier</small></td><td>Paire</td></tr><tr><td>Chaussures de sécurité<small>Embout acier</small></td><td>Paire</td></tr><tr><td>Gilet haute visibilité<small>Bandes réfléchissantes</small></td><td>Pièce</td></tr><tr><td>Lunettes de protection<small>Verres anti-rayures</small></td><td>Pièce</td></tr><tr><td>Tenues de travail<small>Combinaisons</small></td><td>Pièce</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>04 · Protection individuelle (EPI)</h4><table><tbody><tr><td>Casque de chantier<small>Avec jugulaire</small></td><td>Pièce</td></tr><tr><td>Gants de manutention<small>Taille au choix</small></td><td>Paire</td></tr><tr><td>Gants anti-serpent RAPICCA<small>Usage sur site minier</small></td><td>Paire</td></tr><tr><td>Chaussures de sécurité<small>Embout acier, pointure au choix</small></td><td>Paire</td></tr><tr><td>Gilet haute visibilité<small>Bandes réfléchissantes</small></td><td>Pièce</td></tr><tr><td>Lunettes de protection<small>Verres anti-rayures</small></td><td>Pièce</td></tr><tr><td>Protections auditives et respiratoires<small>Bouchons, casques anti-bruit, masques</small></td><td>Pièce</td></tr><tr><td>Tenues de travail<small>Combinaisons, tailles au choix</small></td><td>Pièce</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/epi-protection-individuelle.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article><article class="flip" id="g05">
   <div class="inner">
     <div class="face front"><figure><img src="img/g05.jpg" alt="Clés à molette" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">05</span><h4>Outillage et quincaillerie</h4><p class="desc">Outils, visserie et matériel de sécurisation pour vos ateliers, sites et équipes de maintenance.</p>
+      <div class="body"><span class="num">05</span><h4><a class="glink" href="gammes/outillage-quincaillerie.html">Outillage et quincaillerie</a></h4><p class="desc">Outils, visserie et matériel de sécurisation pour vos ateliers, sites et équipes de maintenance.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>05 · Outillage et quincaillerie</h4><table><tbody><tr><td>Caisse à outils mécanique<small>Clés, douilles, tournevis</small></td><td>Kit</td></tr><tr><td>Outillage à main<small>Selon votre liste</small></td><td>Pièce</td></tr><tr><td>Visserie et boulonnerie<small>Au détail ou en boîte</small></td><td>Boîte</td></tr><tr><td>Cadenas et chaînes<small>Sécurisation du matériel</small></td><td>Pièce</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>05 · Outillage et quincaillerie</h4><table><tbody><tr><td>Caisse à outils mécanique<small>Clés, douilles et tournevis</small></td><td>Kit</td></tr><tr><td>Outillage à main<small>Selon votre liste</small></td><td>Pièce</td></tr><tr><td>Visserie et boulonnerie<small>Au détail ou en boîte</small></td><td>Boîte</td></tr><tr><td>Cadenas et chaînes<small>Sécurisation du matériel</small></td><td>Pièce</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/outillage-quincaillerie.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article><article class="flip" id="g06">
   <div class="inner">
     <div class="face front"><figure><img src="img/g06.jpg" alt="Électricien au travail sur un tableau" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">06</span><h4>Électricité</h4><p class="desc">Câbles, éclairage et matériel électrique pour chantiers, bureaux et bases vie.</p>
+      <div class="body"><span class="num">06</span><h4><a class="glink" href="gammes/electricite.html">Électricité</a></h4><p class="desc">Câbles, éclairage et matériel électrique pour chantiers, bureaux et bases vie.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
     <div class="face back"><h4>06 · Électricité</h4><table><tbody><tr><td>Câble électrique<small>Section et longueur au choix</small></td><td>Mètre</td></tr><tr><td>Projecteur LED<small>Éclairage de chantier</small></td><td>Pièce</td></tr><tr><td>Rallonge de chantier<small>Usage intensif</small></td><td>Pièce</td></tr><tr><td>Multiprise de chantier<small>Usage intensif</small></td><td>Pièce</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+      <div class="back-acts"><a class="gpage-link" href="gammes/electricite.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article><article class="flip" id="g07">
   <div class="inner">
     <div class="face front"><figure><img src="img/g07.jpg" alt="Réseau de tuyauterie et vannes" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">07</span><h4>Plomberie et raccords</h4><p class="desc">Tuyaux, raccords et vannes pour réseaux d'eau, sites et bâtiments.</p>
+      <div class="body"><span class="num">07</span><h4><a class="glink" href="gammes/plomberie-raccords.html">Plomberie et raccords</a></h4><p class="desc">Tuyaux, raccords et vannes pour réseaux d&#x27;eau, sites et bâtiments.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>07 · Plomberie et raccords</h4><table><tbody><tr><td>Raccord Ø 100 mm<small>Pour réseau d'eau</small></td><td>Pièce</td></tr><tr><td>Tuyaux PVC et PEHD<small>Diamètre au choix</small></td><td>Mètre</td></tr><tr><td>Vannes et robinets<small>Diamètre au choix</small></td><td>Pièce</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>07 · Plomberie et raccords</h4><table><tbody><tr><td>Raccord Ø 100 mm<small>Pour réseau d&#x27;eau</small></td><td>Pièce</td></tr><tr><td>Tuyaux PVC et PEHD<small>Diamètre au choix</small></td><td>Mètre</td></tr><tr><td>Vannes et robinets<small>Diamètre au choix</small></td><td>Pièce</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/plomberie-raccords.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article><article class="flip" id="g08">
   <div class="inner">
     <div class="face front"><figure><img src="img/g08.jpg" alt="Sacs de matériaux" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">08</span><h4>Matériaux de construction</h4><p class="desc">Matériaux de gros œuvre et de second œuvre, livrés directement sur chantier.</p>
+      <div class="body"><span class="num">08</span><h4><a class="glink" href="gammes/materiaux-construction.html">Matériaux de construction</a></h4><p class="desc">Matériaux de gros œuvre et de second œuvre, livrés directement sur chantier.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>08 · Matériaux de construction</h4><table><tbody><tr><td>Ciment<small>Sac de 50 kg</small></td><td>Sac</td></tr><tr><td>Fer à béton<small>Diamètre au choix</small></td><td>Barre</td></tr><tr><td>Tôles de couverture<small>Longueur au choix</small></td><td>Feuille</td></tr><tr><td>Sable, gravier, moellons<small>Livrés sur chantier</small></td><td>m³</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>08 · Matériaux de construction</h4><table><tbody><tr><td>Ciment<small>Sac de 50 kg</small></td><td>Sac</td></tr><tr><td>Fer à béton<small>Diamètre au choix</small></td><td>Barre</td></tr><tr><td>Tôles de couverture<small>Longueur au choix</small></td><td>Feuille</td></tr><tr><td>Sable, gravier et moellons<small>Livrés sur chantier</small></td><td>m³</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/materiaux-construction.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article></div></div>
 <div class="pole"><div class="pole-h"><h3>Bureaux et bases vie</h3><small>Gammes 09 – 11</small></div><div class="cards"><article class="flip" id="g09">
   <div class="inner">
     <div class="face front"><figure><img src="img/g09.jpg" alt="Fournitures de bureau" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">09</span><h4>Fournitures de bureau et scolaires</h4><p class="desc">Papeterie, consommables et kits livrés en volume pour vos bureaux, vos équipes et vos programmes sociaux.</p>
+      <div class="body"><span class="num">09</span><h4><a class="glink" href="gammes/fournitures-bureau-scolaires.html">Fournitures de bureau et scolaires</a></h4><p class="desc">Papeterie, consommables et kits livrés en volume pour vos bureaux, vos équipes et vos programmes sociaux.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>09 · Fournitures de bureau et scolaires</h4><table><tbody><tr><td>Papier A4 et A3<small>Ramette de 500 feuilles</small></td><td>Ramette</td></tr><tr><td>Classeurs, chemises, archives<small>Formats au choix</small></td><td>Pièce</td></tr><tr><td>Cartouches et toners<small>Selon votre imprimante</small></td><td>Pièce</td></tr><tr><td>Stylos et marqueurs<small>Couleurs au choix</small></td><td>Paquet</td></tr><tr><td>Cahiers 100 et 200 pages<small>Par paquet</small></td><td>Paquet</td></tr><tr><td>Sacs d'écolier personnalisés<small>Au logo de votre programme</small></td><td>Pièce</td></tr><tr><td>Kits scolaires complets<small>Composition sur mesure</small></td><td>Kit</td></tr><tr><td>Crayons, gommes et taille-crayons<small>Crayons noirs et de couleur, par paquet</small></td><td>Paquet</td></tr><tr><td>Ardoises, craie et géométrie<small>Boîtes de mathématiques, règles 30 cm</small></td><td>Paquet</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>09 · Fournitures de bureau et scolaires</h4><table><tbody><tr><td>Papier A4 et A3<small>Ramette de 500 feuilles</small></td><td>Ramette</td></tr><tr><td>Classeurs, chemises et archives<small>Formats au choix</small></td><td>Pièce</td></tr><tr><td>Cartouches et toners<small>Selon votre imprimante</small></td><td>Pièce</td></tr><tr><td>Stylos, marqueurs et surligneurs<small>Couleurs au choix</small></td><td>Paquet</td></tr><tr><td>Cahiers 100 et 200 pages<small>Par paquet</small></td><td>Paquet</td></tr><tr><td>Sacs d&#x27;écolier personnalisés<small>Au logo de votre programme</small></td><td>Pièce</td></tr><tr><td>Kits scolaires complets<small>Composition sur mesure</small></td><td>Kit</td></tr><tr><td>Crayons, gommes et taille-crayons<small>Crayons noirs et de couleur, par paquet</small></td><td>Paquet</td></tr><tr><td>Ardoises, craie et géométrie<small>Boîtes de mathématiques, règles 30 cm</small></td><td>Paquet</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/fournitures-bureau-scolaires.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article><article class="flip" id="g10">
   <div class="inner">
     <div class="face front"><figure><img src="img/g10.jpg" alt="Stores à lamelles devant une fenêtre" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">10</span><h4>Aménagement et mobilier de bureau</h4><p class="desc">Stores, rideaux, mobilier et climatisation, fournis et posés par nos équipes.</p>
+      <div class="body"><span class="num">10</span><h4><a class="glink" href="gammes/amenagement-mobilier-bureau.html">Aménagement et mobilier de bureau</a></h4><p class="desc">Stores, rideaux, mobilier et climatisation, fournis et posés par nos équipes.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
     <div class="face back"><h4>10 · Aménagement et mobilier de bureau</h4><table><tbody><tr><td>Stores jour et nuit<small>Sur mesure</small></td><td>m²</td></tr><tr><td>Rideaux et voilages<small>Tissu au choix</small></td><td>Mètre</td></tr><tr><td>Rails et ruflettes<small>Au mètre</small></td><td>Mètre</td></tr><tr><td>Chaises et fauteuils<small>Gammes au choix</small></td><td>Pièce</td></tr><tr><td>Bureaux et armoires<small>Selon votre plan</small></td><td>Pièce</td></tr><tr><td>Climatiseurs et ventilateurs<small>Puissance au choix</small></td><td>Pièce</td></tr><tr><td>Pose et installation<small>Par nos équipes</small></td><td>Forfait</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+      <div class="back-acts"><a class="gpage-link" href="gammes/amenagement-mobilier-bureau.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article><article class="flip" id="g11">
   <div class="inner">
     <div class="face front"><figure><img src="img/g11.jpg" alt="Conteneur de base vie" loading="lazy" width="750" height="500"></figure>
-      <div class="body"><span class="num">11</span><h4>Base vie et entretien</h4><p class="desc">Literie, mobilier et produits d'entretien pour camps, bases vie et bureaux.</p>
+      <div class="body"><span class="num">11</span><h4><a class="glink" href="gammes/base-vie-entretien.html">Base vie et entretien</a></h4><p class="desc">Literie, mobilier et produits d&#x27;entretien pour camps, bases vie et bureaux.</p>
       <button class="turn" type="button" aria-expanded="false">Voir les articles <span aria-hidden="true">↻</span></button></div></div>
-    <div class="face back"><h4>11 · Base vie et entretien</h4><table><tbody><tr><td>Matelas et literie<small>Pour camps et bases vie</small></td><td>Pièce</td></tr><tr><td>Mobilier de base vie<small>Tables, chaises, rangements</small></td><td>Pièce</td></tr><tr><td>Produits d'entretien<small>Nettoyage des locaux</small></td><td>Lot</td></tr><tr><td>Petit électroménager<small>Selon votre besoin</small></td><td>Pièce</td></tr><tr><td>Machines à laver<small>Hisense 12 kg, chargement frontal</small></td><td>Pièce</td></tr><tr><td>Sèche-linge<small>Hisense 10 kg ou LG 9 kg, pompe à chaleur</small></td><td>Pièce</td></tr></tbody></table>
-      <button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div>
+    <div class="face back"><h4>11 · Base vie et entretien</h4><table><tbody><tr><td>Matelas et literie<small>Pour camps et bases vie</small></td><td>Pièce</td></tr><tr><td>Mobilier de base vie<small>Tables, chaises, rangements</small></td><td>Pièce</td></tr><tr><td>Produits d&#x27;entretien<small>Nettoyage des locaux</small></td><td>Lot</td></tr><tr><td>Petit électroménager<small>Selon votre besoin</small></td><td>Pièce</td></tr><tr><td>Machines à laver<small>Hisense 12 kg, chargement frontal</small></td><td>Pièce</td></tr><tr><td>Sèche-linge<small>Hisense 10 kg ou LG 9 kg, pompe à chaleur</small></td><td>Pièce</td></tr></tbody></table>
+      <div class="back-acts"><a class="gpage-link" href="gammes/base-vie-entretien.html">Page de la gamme →</a><button class="turn" type="button" aria-expanded="true">Retour <span aria-hidden="true">↺</span></button></div></div>
   </div>
 </article></div></div>
-
+<!-- GAMMES:FIN -->
     <div class="more">
       <div><span class="kicker" style="color:var(--gold)">Approvisionnement général</span><h3 style="margin-top:10px">Un article absent du catalogue&#8239;?</h3><p>Matériel informatique, produits d'hygiène, kits et dotations, pièces introuvables : envoyez-nous votre liste ou votre référence constructeur.</p></div>
       <ul>
@@ -357,8 +364,8 @@
 
 <script src="vendor/anime.min.js"></script>
 <script src="vendor/motion.min.js"></script>
-<script src="js/kokonut.js?v=1"></script>
-<script src="js/site.js?v=2"></script>
+<script src="js/kokonut.js?v=2"></script>
+<script src="js/site.js?v=4"></script>
 <script type="module" src="js/globe.js?v=1"></script>
 </body>
 </html>

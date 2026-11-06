@@ -35,9 +35,10 @@
     function flipTo(target, delay) {
       clearTimeout(timer);
       if (reduce) { shown = target; render(target, target); return; }
+      let left = 3; // deux ou trois volets intermédiaires seulement : le mot reste lisible
       const step = () => {
         if (shown === target) return;
-        const from = shown, to = CHARSET[(CHARSET.indexOf(from) + 1) % CHARSET.length];
+        const from = shown, to = --left > 0 ? CHARSET[1 + Math.floor(Math.random() * 26)] : target;
         render(to, from);
         const ft = half(from, 'top'), fb = half(to, 'bot');
         ft.style.transformOrigin = '50% 100%';
@@ -167,7 +168,7 @@
     set(false);
     btns.forEach(b => b.addEventListener('click', () => { const on = !card.classList.contains('on'); set(on); (on ? back : front).querySelector('.turn').focus({ preventScroll: true }); }));
     // un clic n'importe où sur la photo ou le texte retourne aussi la carte
-    front.addEventListener('click', e => { if (!e.target.closest('.turn')) { set(true); back.querySelector('.turn').focus({ preventScroll: true }); } });
+    front.addEventListener('click', e => { if (!e.target.closest('.turn, a')) { set(true); back.querySelector('.turn').focus({ preventScroll: true }); } });
   }
 
   window.Kokonut = { SplitFlap, BackgroundPaths, CardFlip };
