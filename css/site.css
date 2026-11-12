@@ -358,4 +358,20 @@ nav.menu a.lang{color:var(--gold)}
 @media (prefers-reduced-motion:reduce){.wa-float{transition:none}}
 .flip .back-acts{position:sticky;bottom:-18px;background:var(--navy);margin-inline:-22px;padding:12px 22px 14px;border-top:1px solid var(--line-d);box-shadow:0 -12px 18px rgba(14,26,48,.85)}
 .brand b{white-space:nowrap}
-@media (max-width:1320px) and (min-width:1121px){nav.menu{gap:15px} nav.menu a{font-size:14px} header .wrap{gap:18px}}
+@media (max-width:1420px) and (min-width:1121px){nav.menu{gap:14px} nav.menu a{font-size:14px} header .wrap{gap:18px}}
+
+/* Mobile : gammes en cartes compactes (2 colonnes, lien direct vers la page de la gamme) */
+@media (max-width:600px){
+.cards,.cards.five{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.flip .back{display:none}
+.flip .front{cursor:default}
+.flip .desc,.flip .turn{display:none}
+.flip .body{padding:12px 12px 14px;gap:4px}
+.flip .num{font-size:18px}
+.flip h4{font-size:15px;line-height:1.25}
+.flip .glink::after{content:"";position:absolute;inset:0;z-index:2}
+.pole + .pole{margin-top:40px}
+.pole-h{margin-bottom:16px}
+.wa-float{width:50px;height:50px;right:calc(12px + env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px))}
+.wa-float svg{width:26px;height:26px}
+}

@@ -1,16 +1,24 @@
 /* Globe 3D de l'ouverture (three.js) : la Terre en fils dorés, Conakry en point lumineux,
-   et des arcs d'approvisionnement qui convergent vers Conakry (importation sur demande). */
-import * as THREE from '../vendor/three.module.min.js';
-
+   et des arcs d'approvisionnement qui convergent vers Conakry (importation sur demande).
+   Le globe n'est chargé que sur grand écran et bonne connexion : sur téléphone ou réseau lent,
+   les 670 Ko de three.js ne sont jamais téléchargés. */
+let THREE;
 const canvas = document.getElementById('globe');
 const hero = canvas && canvas.closest('.hero');
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const conn = navigator.connection || {};
+const light = innerWidth < 1000 || conn.saveData || /(^|-)2g|3g/.test(conn.effectiveType || '');
 
-if (canvas && hero) {
-  let renderer;
-  try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'low-power' }); }
-  catch (e) { renderer = null; }
-  if (renderer) init(renderer);
+if (canvas && hero && !light) {
+  import('../vendor/three.module.min.js').then(mod => {
+    THREE = mod;
+    let renderer;
+    try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'low-power' }); }
+    catch (e) { renderer = null; }
+    if (renderer) init(renderer);
+  }).catch(() => {});
+} else if (canvas) {
+  canvas.remove();
 }
 
 function init(renderer) {
